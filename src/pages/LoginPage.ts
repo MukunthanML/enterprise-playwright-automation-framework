@@ -12,7 +12,7 @@ export default class LoginPage {
   }
 
   async navigateToLoginPage() {
-    await this.page.goto("/");
+    await this.page.goto("https://login.salesforce.com");
   }
 
   async fillUsername(username: string) {
