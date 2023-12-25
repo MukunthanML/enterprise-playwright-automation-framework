@@ -1,4 +1,4 @@
-import { defineConfig, devices } from '@playwright/test';
+import { defineConfig, devices } from "@playwright/test";
 
 /**
  * Read environment variables from file.
@@ -6,18 +6,13 @@ import { defineConfig, devices } from '@playwright/test';
  */
 // require('dotenv').config();
 
-if (!process.env.NODE_ENV)
-{
-  require('dotenv').config({path:`${__dirname}//src//config//.env`});
+if (!process.env.NODE_ENV) {
+  require("dotenv").config({ path: `${__dirname}//src//config//.env` });
+} else {
+  require("dotenv").config({
+    path: `${__dirname}//src//config//.env.${process.env.NODE_ENV}`,
+  });
 }
-else
-{
-  require('dotenv').config({path:`${__dirname}//src//config//.env.${process.env.NODE_ENV}`});
-}
-
-
-
-
 
 /**
  * See https://playwright.dev/docs/test-configuration.
@@ -25,7 +20,7 @@ else
 export default defineConfig({
   timeout: 900000,
 
-  testDir: './src/tests',
+  testDir: "./src/tests",
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -35,7 +30,7 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
+  reporter: "html",
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
@@ -43,9 +38,8 @@ export default defineConfig({
     baseURL: "https://login.salesforce.com",
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: 'on-first-retry',
-    screenshot: 'on',
-  
+    trace: "on-first-retry",
+    screenshot: "on",
   },
 
   /* Configure projects for major browsers */
@@ -80,9 +74,9 @@ export default defineConfig({
     //   name: 'Microsoft Edge',
     //   use: { ...devices['Desktop Edge'], channel: 'msedge' },
     // },
-      {
-      name: 'Google Chrome',
-      use: { ...devices['Desktop Chrome'], channel: 'chrome' },
+    {
+      name: "Google Chrome",
+      use: { ...devices["Desktop Chrome"], channel: "chrome" },
     },
   ],
 
