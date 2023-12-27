@@ -3,6 +3,7 @@ import { test } from "@playwright/test";
 import LoginPage from "../pages/loginPage";
 import { decrypt, encrypt } from "../utils/CryptojsUtil";
 import { encryptEnvFile, decryptEnvFile } from "../utils/EncryptEnvFile";
+import logger from "../utils/LoggerUtil";
 
 test("test", async ({ page }) => {
   const loginPage = new LoginPage(page);
