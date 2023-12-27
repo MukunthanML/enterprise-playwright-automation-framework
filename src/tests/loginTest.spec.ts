@@ -4,7 +4,7 @@ import LoginPage from "../pages/loginPage";
 import { decrypt, encrypt } from "../utils/CryptojsUtil";
 import { encryptEnvFile, decryptEnvFile } from "../utils/EncryptEnvFile";
 
-test.skip("test", async ({ page }) => {
+test("test", async ({ page }) => {
   const loginPage = new LoginPage(page);
   await loginPage.navigateToLoginPage();
   await loginPage.fillUsername(decrypt(process.env.userid!));
@@ -13,7 +13,7 @@ test.skip("test", async ({ page }) => {
   await homePage.expectServiceTitleToBeVisible();
 });
 
-test("Sample env test", async ({ page }) => {
+test.skip("Sample env test", async ({ page }) => {
   // const plaintext = 'Hello, Mars!';
   // const encryptedText = encrypt(plaintext);
   // console.log('SALT:', process.env.SALT);

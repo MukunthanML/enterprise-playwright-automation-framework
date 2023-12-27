@@ -17,7 +17,6 @@ if (process.env.NODE_ENV) {
 
 export function encryptEnvFile() {
   const SALT = process.env.SALT || "defaultSALT";
-  console.log("SALT is (from env file)" + SALT);
   // Read the .env file
   const envFileContent = fs.readFileSync(envFilePath, "utf8");
   const envLines = envFileContent.split("\n");
@@ -45,7 +44,6 @@ export function encryptEnvFile() {
 }
 export function decryptEnvFile() {
   const SALT = process.env.SALT || "defaultSALT";
-  console.log("SALT is (from env file)" + SALT);
   // Read the .env file
   const envFileContent = fs.readFileSync(envFilePath, "utf8");
   const envLines = envFileContent.split("\n");
