@@ -1,8 +1,7 @@
-let CryptoJSUtil = require("crypto-js");
+let CryptoJSUtilFile = require("crypto-js");
 let fs = require("fs");
 let path = require("path");
 
-const SALT = process.env.SALT || "defaultSalt";
 const currentDir = __dirname;
 // Go one level above (back to 'src')
 const srcDir = path.resolve(currentDir, "..");
@@ -14,9 +13,11 @@ if (process.env.NODE_ENV) {
   const envFilePath = `${configDir}\\.env.${process.env.NODE_ENV}`;
 }
 
-console.log(envFilePath);
+//console.log(envFilePath);
 
 export function encryptEnvFile() {
+  const SALT = process.env.SALT || "defaultSALT";
+  console.log("SALT is (from env file)" + SALT);
   // Read the .env file
   const envFileContent = fs.readFileSync(envFilePath, "utf8");
   const envLines = envFileContent.split("\n");
@@ -26,7 +27,10 @@ export function encryptEnvFile() {
     const [key, value] = line.split("=");
 
     if (value) {
-      const encryptedValue = CryptoJSUtil.AES.encrypt(value, SALT).toString();
+      const encryptedValue = CryptoJSUtilFile.AES.encrypt(
+        value,
+        SALT
+      ).toString();
       return `${key}=${encryptedValue}`;
     }
 
@@ -40,6 +44,8 @@ export function encryptEnvFile() {
   console.log("Encryption complete. Updated .env file.");
 }
 export function decryptEnvFile() {
+  const SALT = process.env.SALT || "defaultSALT";
+  console.log("SALT is (from env file)" + SALT);
   // Read the .env file
   const envFileContent = fs.readFileSync(envFilePath, "utf8");
   const envLines = envFileContent.split("\n");
@@ -49,8 +55,8 @@ export function decryptEnvFile() {
     const [key, value] = line.split("=");
 
     if (value) {
-      const decryptedValue = CryptoJSUtil.AES.decrypt(value, SALT).toString(
-        CryptoJSUtil.enc.Utf8
+      const decryptedValue = CryptoJSUtilFile.AES.decrypt(value, SALT).toString(
+        CryptoJSUtilFile.enc.Utf8
       );
 
       return `${key}=${decryptedValue}`;
