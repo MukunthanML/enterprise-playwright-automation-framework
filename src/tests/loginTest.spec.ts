@@ -1,8 +1,6 @@
-// Test script using the Page Object Model
 import { test } from "@playwright/test";
 import LoginPage from "../pages/loginPage";
-import { decrypt, encrypt } from "../utils/CryptojsUtil";
-import { encryptEnvFile, decryptEnvFile } from "../utils/EncryptEnvFile";
+import { decrypt } from "../utils/CryptojsUtil";
 import logger from "../utils/LoggerUtil";
 
 test("test", async ({ page }) => {
@@ -12,6 +10,7 @@ test("test", async ({ page }) => {
   await loginPage.fillPassword(decrypt(process.env.password!));
   const homePage = await loginPage.clickLoginButton();
   await homePage.expectServiceTitleToBeVisible();
+  logger.info("Test for login is completed")
 });
 
 test.skip("Sample env test", async ({ page }) => {

@@ -1,5 +1,108 @@
-2023-12-27T18:37:01+05:30 [info]: Navigated to login.salesforce.com
-2023-12-27T18:37:01+05:30 [info]: Filled username
-2023-12-27T18:37:01+05:30 [info]: Filled pasword
-2023-12-27T18:37:04+05:30 [info]: Clicked login button
-2023-12-27T18:37:09+05:30 [info]: Service Title is visible
+2023-12-30T19:17:05+05:30 [info]: Navigated to login.salesforce.com
+2023-12-30T19:17:05+05:30 [info]: Filled username
+2023-12-30T19:17:05+05:30 [info]: Filled pasword
+2023-12-30T19:17:07+05:30 [info]: Clicked login button
+2023-12-30T19:17:11+05:30 [info]: Service Title is visible
+2023-12-30T19:17:11+05:30 [info]: Contacts Tab is visible
+2023-12-30T19:17:12+05:30 [info]: Contacts Tab is clicked
+2023-12-30T19:17:14+05:30 [info]: New button is clicked
+2023-12-30T19:17:15+05:30 [info]: Salutation Mr. is selected
+2023-12-30T19:17:15+05:30 [info]: First name is filled as Siva
+2023-12-30T19:17:15+05:30 [info]: Last name is filled as Kumar
+2023-12-30T19:17:16+05:30 [info]: Save Button is clicked
+2023-12-30T19:17:18+05:30 [info]: New contact created and Mr. Siva Kumar is visible
+2023-12-30T19:17:18+05:30 [info]: Test for login is completed
+2023-12-30T19:24:05+05:30 [info]: Navigated to login.salesforce.com
+2023-12-30T19:24:06+05:30 [info]: Filled username
+2023-12-30T19:24:06+05:30 [info]: Filled pasword
+2023-12-30T19:24:07+05:30 [info]: Clicked login button
+2023-12-30T19:24:12+05:30 [info]: Service Title is visible
+2023-12-30T19:24:12+05:30 [info]: Contacts Tab is visible
+2023-12-30T19:24:12+05:30 [info]: Contacts Tab is clicked
+2023-12-30T19:24:15+05:30 [info]: New button is clicked
+2023-12-30T19:24:16+05:30 [info]: First name is filled as Manjunath
+2023-12-30T19:24:16+05:30 [info]: Last name is filled as D
+2023-12-30T19:24:17+05:30 [info]: Save Button is clicked
+2023-12-30T19:33:34+05:30 [info]: Navigated to login.salesforce.com
+2023-12-30T19:33:34+05:30 [info]: Filled username
+2023-12-30T19:33:34+05:30 [info]: Filled pasword
+2023-12-30T19:33:37+05:30 [info]: Clicked login button
+2023-12-30T19:33:43+05:30 [info]: Service Title is visible
+2023-12-30T19:33:43+05:30 [info]: Contacts Tab is visible
+2023-12-30T19:33:43+05:30 [info]: Contacts Tab is clicked
+2023-12-30T19:33:45+05:30 [info]: New button is clicked
+2023-12-30T19:33:48+05:30 [info]: First name is filled as Devi
+2023-12-30T19:33:48+05:30 [info]: Last name is filled as Priya
+2023-12-30T19:33:48+05:30 [info]: Save Button is clicked
+2023-12-30T19:33:50+05:30 [info]: New contact created and Mr. Devi Priya is visible
+2023-12-30T19:33:50+05:30 [info]: Test for Contact Creation is completed
+2023-12-30T19:36:39+05:30 [info]: Test for Contact Creation is started...
+2023-12-30T19:36:41+05:30 [info]: Navigated to login.salesforce.com
+2023-12-30T19:36:41+05:30 [info]: Filled username
+2023-12-30T19:36:41+05:30 [info]: Filled pasword
+2023-12-30T19:36:43+05:30 [info]: Clicked login button
+2023-12-30T19:36:49+05:30 [info]: Service Title is visible
+2023-12-30T19:36:49+05:30 [info]: Contacts Tab is visible
+2023-12-30T19:36:49+05:30 [info]: Contacts Tab is clicked
+2023-12-30T19:36:51+05:30 [info]: New button is clicked
+2023-12-30T19:36:52+05:30 [info]: First name is filled as Abirami
+2023-12-30T19:36:52+05:30 [info]: Last name is filled as M
+2023-12-30T19:36:53+05:30 [info]: Save Button is clicked
+2023-12-30T19:36:55+05:30 [info]: New contact created and Abirami M is visible
+2023-12-30T19:36:55+05:30 [info]: Test for Contact Creation is completed
+2023-12-30T20:52:17+05:30 [info]: Test for Contact Creation is started...
+2023-12-30T20:52:17+05:30 [info]: Test for Contact Creation is started...
+2023-12-30T20:52:19+05:30 [info]: Navigated to login.salesforce.com
+2023-12-30T20:52:19+05:30 [info]: Filled username
+2023-12-30T20:52:19+05:30 [info]: Filled pasword
+2023-12-30T20:52:19+05:30 [info]: Navigated to login.salesforce.com
+2023-12-30T20:52:19+05:30 [info]: Filled username
+2023-12-30T20:52:19+05:30 [info]: Filled pasword
+2023-12-30T20:52:21+05:30 [info]: Clicked login button
+2023-12-30T20:52:21+05:30 [info]: Clicked login button
+2023-12-30T20:52:26+05:30 [info]: Service Title is visible
+2023-12-30T20:52:26+05:30 [info]: Contacts Tab is visible
+2023-12-30T20:52:26+05:30 [info]: Service Title is visible
+2023-12-30T20:52:26+05:30 [info]: Contacts Tab is clicked
+2023-12-30T20:52:26+05:30 [info]: Contacts Tab is visible
+2023-12-30T20:52:27+05:30 [info]: Contacts Tab is clicked
+2023-12-30T20:52:29+05:30 [info]: New button is clicked
+2023-12-30T20:52:29+05:30 [info]: New button is clicked
+2023-12-30T20:52:31+05:30 [info]: First name is filled as Alice
+2023-12-30T20:52:31+05:30 [info]: First name is filled as John
+2023-12-30T20:52:31+05:30 [info]: Last name is filled as Smith
+2023-12-30T20:52:31+05:30 [info]: Last name is filled as Doe
+2023-12-30T20:52:31+05:30 [info]: Save Button is clicked
+2023-12-30T20:52:32+05:30 [info]: Save Button is clicked
+2023-12-30T20:52:33+05:30 [info]: New contact created and Alice Smith is visible
+2023-12-30T20:52:34+05:30 [info]: New contact created and John Doe is visible
+2023-12-30T20:52:34+05:30 [info]: Test for Contact Creation is completed
+2023-12-30T20:52:34+05:30 [info]: Test for Contact Creation is completed
+2023-12-30T21:58:21+05:30 [info]: Test for Contact Creation is started...
+2023-12-30T21:58:21+05:30 [info]: Test for Contact Creation is started...
+2023-12-30T21:58:23+05:30 [info]: Navigated to login.salesforce.com
+2023-12-30T21:58:23+05:30 [info]: Filled username
+2023-12-30T21:58:23+05:30 [info]: Filled pasword
+2023-12-30T21:58:23+05:30 [info]: Navigated to login.salesforce.com
+2023-12-30T21:58:23+05:30 [info]: Filled username
+2023-12-30T21:58:23+05:30 [info]: Filled pasword
+2023-12-30T21:58:25+05:30 [info]: Clicked login button
+2023-12-30T21:58:25+05:30 [info]: Clicked login button
+2023-12-30T21:58:30+05:30 [info]: Service Title is visible
+2023-12-30T21:58:30+05:30 [info]: Contacts Tab is visible
+2023-12-30T21:58:30+05:30 [info]: Contacts Tab is clicked
+2023-12-30T21:58:32+05:30 [info]: Service Title is visible
+2023-12-30T21:58:32+05:30 [info]: Contacts Tab is visible
+2023-12-30T21:58:32+05:30 [info]: Contacts Tab is clicked
+2023-12-30T21:58:32+05:30 [info]: New button is clicked
+2023-12-30T21:58:34+05:30 [info]: New button is clicked
+2023-12-30T21:58:35+05:30 [info]: First name is filled as BND
+2023-12-30T21:58:35+05:30 [info]: Last name is filled as Gef
+2023-12-30T21:58:36+05:30 [info]: Save Button is clicked
+2023-12-30T21:58:37+05:30 [info]: First name is filled as ABc
+2023-12-30T21:58:37+05:30 [info]: Last name is filled as DEF
+2023-12-30T21:58:37+05:30 [info]: Save Button is clicked
+2023-12-30T21:58:39+05:30 [info]: New contact created and BND Gef is visible
+2023-12-30T21:58:39+05:30 [info]: Test for Contact Creation is completed
+2023-12-30T21:58:39+05:30 [info]: New contact created and ABc DEF is visible
+2023-12-30T21:58:39+05:30 [info]: Test for Contact Creation is completed
