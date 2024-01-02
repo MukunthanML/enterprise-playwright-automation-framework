@@ -55,7 +55,7 @@ export const exportToCsv = (data: UserData[], fileName: string) => {
       { id: 'name', title: 'Name' },
       { id: 'email', title: 'Email' },
       { id: 'username', title: 'Username' },
-      { id: 'password', title: 'Password' },
+      { id: 'phone', title: 'Phone' },
       { id: 'age', title: 'Age' },
       { id: 'address', title: 'Address' },
     ],
