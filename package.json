@@ -13,7 +13,9 @@
     "@types/node": "^20.10.3"
   },
   "dependencies": {
+    "@faker-js/faker": "^8.3.1",
     "crypto-js": "^4.2.0",
+    "csv-writer": "^1.6.0",
     "csvtojson": "^2.0.10",
     "dotenv": "^16.3.1",
     "moment-timezone": "^0.5.43",

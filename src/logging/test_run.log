@@ -106,3 +106,73 @@
 2023-12-30T21:58:39+05:30 [info]: Test for Contact Creation is completed
 2023-12-30T21:58:39+05:30 [info]: New contact created and ABc DEF is visible
 2023-12-30T21:58:39+05:30 [info]: Test for Contact Creation is completed
+2023-12-31T10:20:44+05:30 [info]: Test for Contact Creation is started...
+2023-12-31T10:20:46+05:30 [info]: Navigated to login.salesforce.com
+2023-12-31T10:20:47+05:30 [info]: Filled username
+2023-12-31T10:20:47+05:30 [info]: Filled pasword
+2023-12-31T10:20:49+05:30 [info]: Clicked login button
+2023-12-31T10:20:54+05:30 [info]: Service Title is visible
+2023-12-31T10:20:54+05:30 [info]: Contacts Tab is visible
+2023-12-31T10:20:54+05:30 [info]: Contacts Tab is clicked
+2023-12-31T10:20:57+05:30 [info]: New button is clicked
+2023-12-31T10:20:59+05:30 [info]: First name is filled as Shiva
+2023-12-31T10:20:59+05:30 [info]: Last name is filled as Rudra
+2023-12-31T10:21:00+05:30 [info]: Save Button is clicked
+2023-12-31T10:21:02+05:30 [info]: New contact created and Shiva Rudra is visible
+2023-12-31T10:21:02+05:30 [info]: Test for Contact Creation is completed
+2023-12-31T10:24:43+05:30 [info]: Test for Contact Creation is started...
+2023-12-31T10:24:44+05:30 [info]: Test for Contact Creation is started...
+2023-12-31T10:24:46+05:30 [info]: Navigated to login.salesforce.com
+2023-12-31T10:24:46+05:30 [info]: Filled username
+2023-12-31T10:24:46+05:30 [info]: Navigated to login.salesforce.com
+2023-12-31T10:24:46+05:30 [info]: Filled pasword
+2023-12-31T10:24:46+05:30 [info]: Filled username
+2023-12-31T10:24:46+05:30 [info]: Filled pasword
+2023-12-31T10:24:48+05:30 [info]: Clicked login button
+2023-12-31T10:24:48+05:30 [info]: Clicked login button
+2023-12-31T10:24:55+05:30 [info]: Service Title is visible
+2023-12-31T10:24:55+05:30 [info]: Contacts Tab is visible
+2023-12-31T10:24:56+05:30 [info]: Contacts Tab is clicked
+2023-12-31T10:24:57+05:30 [info]: Service Title is visible
+2023-12-31T10:24:57+05:30 [info]: Contacts Tab is visible
+2023-12-31T10:24:57+05:30 [info]: Contacts Tab is clicked
+2023-12-31T10:24:58+05:30 [info]: New button is clicked
+2023-12-31T10:25:00+05:30 [info]: New button is clicked
+2023-12-31T10:25:00+05:30 [info]: First name is filled as Antony
+2023-12-31T10:25:00+05:30 [info]: Last name is filled as Billa
+2023-12-31T10:25:01+05:30 [info]: Save Button is clicked
+2023-12-31T10:25:02+05:30 [info]: First name is filled as Henry
+2023-12-31T10:25:02+05:30 [info]: Last name is filled as Ford
+2023-12-31T10:25:03+05:30 [info]: Save Button is clicked
+2023-12-31T10:25:03+05:30 [info]: New contact created and Antony Billa is visible
+2023-12-31T10:25:03+05:30 [info]: Test for Contact Creation is completed
+2023-12-31T10:25:05+05:30 [info]: New contact created and Henry Ford is visible
+2023-12-31T10:25:05+05:30 [info]: Test for Contact Creation is completed
+2023-12-31T10:30:21+05:30 [info]: Test for Contact Creation is started...
+2023-12-31T10:30:21+05:30 [info]: Test for Contact Creation is started...
+2023-12-31T10:30:23+05:30 [info]: Navigated to login.salesforce.com
+2023-12-31T10:30:23+05:30 [info]: Navigated to login.salesforce.com
+2023-12-31T10:30:23+05:30 [info]: Filled username
+2023-12-31T10:30:23+05:30 [info]: Filled username
+2023-12-31T10:30:23+05:30 [info]: Filled pasword
+2023-12-31T10:30:23+05:30 [info]: Filled pasword
+2023-12-31T10:30:26+05:30 [info]: Clicked login button
+2023-12-31T10:30:26+05:30 [info]: Clicked login button
+2023-12-31T10:30:32+05:30 [info]: Service Title is visible
+2023-12-31T10:30:32+05:30 [info]: Contacts Tab is visible
+2023-12-31T10:30:32+05:30 [info]: Contacts Tab is clicked
+2023-12-31T10:30:33+05:30 [info]: Service Title is visible
+2023-12-31T10:30:33+05:30 [info]: Contacts Tab is visible
+2023-12-31T10:30:33+05:30 [info]: Contacts Tab is clicked
+2023-12-31T10:30:34+05:30 [info]: New button is clicked
+2023-12-31T10:30:35+05:30 [info]: New button is clicked
+2023-12-31T10:30:37+05:30 [info]: First name is filled as green
+2023-12-31T10:30:37+05:30 [info]: First name is filled as red
+2023-12-31T10:30:37+05:30 [info]: Last name is filled as blue
+2023-12-31T10:30:37+05:30 [info]: Last name is filled as black
+2023-12-31T10:30:37+05:30 [info]: Save Button is clicked
+2023-12-31T10:30:38+05:30 [info]: Save Button is clicked
+2023-12-31T10:30:40+05:30 [info]: New contact created and red black is visible
+2023-12-31T10:30:40+05:30 [info]: New contact created and green blue is visible
+2023-12-31T10:30:40+05:30 [info]: Test for Contact Creation is completed
+2023-12-31T10:30:40+05:30 [info]: Test for Contact Creation is completed
