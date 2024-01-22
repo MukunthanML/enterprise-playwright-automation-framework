@@ -5,6 +5,7 @@ import logger from "../utils/LoggerUtil";
 import cdata from "../testdata/datademo.json";
 import { convertCsvFileToJsonFile } from "../utils/CSVtoJSONUtil";
 import { exportToCsv, exportToJson, generateTestData } from "../utils/FakerDataUtil";
+import { demoOutput } from "../utils/fakersample";
 
 for (const contact of cdata) {
   test.skip(`Advance DD test for ${contact.firstName} `, async ({ page }) => {
@@ -47,6 +48,13 @@ test.skip("simple DD test", async ({ page }) => {
 test.skip("csv to json", async () => {
   convertCsvFileToJsonFile("data.csv", "datademo.json");
 });
+
+
+test.skip("demo faker", async () => { 
+
+  console.log(demoOutput)
+
+ });
 
 test("Faker", async ({ page }) => { 
 
