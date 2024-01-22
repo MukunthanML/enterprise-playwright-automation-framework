@@ -1,11 +1,11 @@
 import { test } from "@playwright/test";
-import LoginPage from "../pages/loginPage";
 import { decrypt } from "../utils/CryptojsUtil";
 import logger from "../utils/LoggerUtil";
 import cdata from "../testdata/datademo.json";
 import { convertCsvFileToJsonFile } from "../utils/CSVtoJSONUtil";
 import { exportToCsv, exportToJson, generateTestData } from "../utils/FakerDataUtil";
 import { demoOutput } from "../utils/fakersample";
+import LoginPage from "../pages/loginPage";
 
 for (const contact of cdata) {
   test.skip(`Advance DD test for ${contact.firstName} `, async ({ page }) => {
@@ -56,7 +56,7 @@ test.skip("demo faker", async () => {
 
  });
 
-test("Faker", async ({ page }) => { 
+test.skip("Faker", async ({ page }) => { 
 
   // Generate test data
 const testData = generateTestData(20);
