@@ -2,7 +2,7 @@ import { test } from "@playwright/test";
 import { decrypt } from "../utils/CryptojsUtil";
 import logger from "../utils/LoggerUtil";
 import cdata from "../testdata/datademo.json";
-import { convertCsvFileToJsonFile } from "../utils/CSVtoJSONUtil";
+import { convertCsvFileToJsonFile } from "../utils/CsvtoJsonUtil";
 import { exportToCsv, exportToJson, generateTestData } from "../utils/FakerDataUtil";
 import { demoOutput } from "../utils/fakersample";
 import LoginPage from "../pages/loginPage";
