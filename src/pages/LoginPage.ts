@@ -1,5 +1,5 @@
 import { Page } from "@playwright/test";
-import HomePage from "./homePage";
+import HomePage from "./HomePage";
 import logger from "../utils/LoggerUtil";
 
 export default class LoginPage {

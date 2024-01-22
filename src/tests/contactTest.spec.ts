@@ -5,7 +5,7 @@ import cdata from "../testdata/datademo.json";
 import { convertCsvFileToJsonFile } from "../utils/CsvtoJsonUtil";
 import { exportToCsv, exportToJson, generateTestData } from "../utils/FakerDataUtil";
 import { demoOutput } from "../utils/fakersample";
-import LoginPage from "../pages/loginPage";
+import LoginPage from "../pages/LoginPage";
 
 for (const contact of cdata) {
   test.skip(`Advance DD test for ${contact.firstName} `, async ({ page }) => {
