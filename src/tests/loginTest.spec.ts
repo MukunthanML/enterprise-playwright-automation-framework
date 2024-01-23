@@ -7,8 +7,8 @@ import { encryptEnvFile } from "../utils/EncryptEnvFile";
 test("simple login test", async ({ page }) => {
   const loginPage= new LoginPage(page);
   await loginPage.navigateToLoginPage();
-  await loginPage.fillUsername(decrypt(process.env.userid!));
-  await loginPage.fillPassword(decrypt(process.env.password!));
+  await loginPage.fillUsername("playwright.user@qa.com");
+  await loginPage.fillPassword("myplaywright909");
   const homePage = await loginPage.clickLoginButton();
   await homePage.expectServiceTitleToBeVisible();
   logger.info("Test for login is completed")
