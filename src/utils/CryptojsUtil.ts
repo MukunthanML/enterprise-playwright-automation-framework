@@ -5,7 +5,7 @@ let CryptoJSUtil = require("crypto-js");
 // Encryption function
 export function encrypt(text: string) {
   // Get the SALT from the system environment variable
-  const SALT = process.env.SALT || "defaultSALT";
+  const SALT = process.env.SALT || "omg";
   const cipherText = CryptoJSUtil.AES.encrypt(text, SALT).toString();
   return cipherText;
 }
