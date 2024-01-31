@@ -1,6 +1,6 @@
-let CryptoJSUtilFile = require("crypto-js");
-let fs = require("fs");
-let path = require("path");
+const CryptoJSUtilFile = require("crypto-js");
+const fs = require("fs");
+const path = require("path");
 
 const currentDir = __dirname;
 // Go one level above (back to 'src')

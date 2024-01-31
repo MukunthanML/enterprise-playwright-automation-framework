@@ -1,6 +1,6 @@
 // Include CryptoJS library (make sure to include it in your project)
 // You can download it from: https://cryptojs.gitbook.io/docs/
-let CryptoJSUtil = require("crypto-js");
+const CryptoJSUtil = require("crypto-js");
 
 // Encryption function
 export function encrypt(text: string) {
