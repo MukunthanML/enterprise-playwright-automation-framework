@@ -1,29 +1,27 @@
-import { test } from "@playwright/test";
+import { expect, test } from "@playwright/test";
 import LoginPage from "../pages/LoginPage";
-import { decrypt, encrypt } from "../utils/CryptojsUtil";
 import logger from "../utils/LoggerUtil";
-import { encryptEnvFile } from "../utils/EncryptEnvFile";
+import { decrypt } from "../utils/CryptojsUtil";
 
-test("simple login test", async ({ page }) => {
-  const loginPage= new LoginPage(page);
+const authFile = "src/config/auth.json";
+
+test.skip("simple login test", async ({ page }) => {
+  const loginPage = new LoginPage(page);
   await loginPage.navigateToLoginPage();
-  await loginPage.fillUsername("playwright.user@qa.com");
-  await loginPage.fillPassword("myplaywright909");
+  await loginPage.fillUsername(decrypt(process.env.userid!));
+  await loginPage.fillPassword(decrypt(process.env.password!));
   const homePage = await loginPage.clickLoginButton();
   await homePage.expectServiceTitleToBeVisible();
-  logger.info("Test for login is completed")
+  logger.info("Test for login is completed");
+  await page.context().storageState({ path: authFile });
+  logger.info("Auth state is saved");
 });
 
-
-
-test.skip("Sample env test", async ({ }) => {
-  // const plaintext = 'Hello, Mars!';
- // const encryptedText = encrypt("myplaywright909");
-  //console.log('SALT:', process.env.SALT);
-  // console.log('Encrypted:', encryptedText);
-  // const decryptedText = decrypt(encryptedText);
-  // console.log('Decrypted:', decryptedText);
-  encryptEnvFile();
-// console.log(decrypt("U2FsdGVkX197mBdFhci0yNUxOudsGfcL4w5q9pV2n18JctWJ3ya5USIkbuPXjyd8"));
-
+test("Login with auth file", async ({ browser }) => {
+  const context = await browser.newContext({ storageState: authFile });
+  const page = await context.newPage();
+  await page.goto(
+    "https://mukunthanr2-dev-ed.lightning.force.com/lightning/page/home"
+  );
+  await expect(page.getByRole("link", { name: "Accounts" })).toBeVisible();
 });

@@ -65,3 +65,59 @@ Call log:
   [2m- expect.toBeVisible with timeout 15000ms[22m
 [2m  - waiting for getByTitle('Service')[22m
 
+2024-02-03T17:32:46+05:30 [info]: Navigated to login.salesforce.com
+2024-02-03T17:32:46+05:30 [info]: Filled username
+2024-02-03T17:32:46+05:30 [info]: Filled pasword
+2024-02-03T17:32:50+05:30 [info]: Clicked login button
+2024-02-03T17:32:57+05:30 [info]: Service Title is visible
+2024-02-03T17:32:57+05:30 [info]: Test for login is completed
+2024-02-03T17:36:03+05:30 [info]: Navigated to login.salesforce.com
+2024-02-03T17:36:03+05:30 [info]: Filled username
+2024-02-03T17:36:03+05:30 [info]: Filled pasword
+2024-02-03T17:36:14+05:30 [info]: Clicked login button
+2024-02-03T17:36:21+05:30 [info]: Service Title is visible
+2024-02-03T17:36:21+05:30 [info]: Test for login is completed
+2024-02-03T17:53:04+05:30 [info]: Navigated to login.salesforce.com
+2024-02-03T17:53:04+05:30 [info]: Filled username
+2024-02-03T17:53:04+05:30 [info]: Filled pasword
+2024-02-03T17:53:08+05:30 [info]: Clicked login button
+2024-02-03T17:53:23+05:30 [error]: Error clicking login button: Error: [31mTimed out 15000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m()[22m
+
+Locator: getByTitle('Service')
+Expected: visible
+Received: hidden
+Call log:
+  [2m- expect.toBeVisible with timeout 15000ms[22m
+[2m  - waiting for getByTitle('Service')[22m
+
+2024-02-03T18:02:26+05:30 [info]: Navigated to login.salesforce.com
+2024-02-03T18:02:26+05:30 [info]: Filled username
+2024-02-03T18:02:26+05:30 [info]: Filled pasword
+2024-02-03T18:02:30+05:30 [info]: Clicked login button
+2024-02-03T18:02:37+05:30 [info]: Service Title is visible
+2024-02-03T18:02:37+05:30 [info]: Test for login is completed
+2024-02-03T23:47:20+05:30 [info]: Navigated to login.salesforce.com
+2024-02-03T23:47:20+05:30 [info]: Filled username
+2024-02-03T23:47:20+05:30 [info]: Filled pasword
+2024-02-03T23:47:24+05:30 [info]: Clicked login button
+2024-02-03T23:47:39+05:30 [error]: Error clicking login button: Error: [31mTimed out 15000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m()[22m
+
+Locator: getByTitle('Service')
+Expected: visible
+Received: hidden
+Call log:
+  [2m- expect.toBeVisible with timeout 15000ms[22m
+[2m  - waiting for getByTitle('Service')[22m
+
+2024-02-04T13:14:12+05:30 [info]: Navigated to login.salesforce.com
+2024-02-04T13:14:12+05:30 [info]: Filled username
+2024-02-04T13:14:13+05:30 [info]: Filled pasword
+2024-02-04T13:14:16+05:30 [info]: Clicked login button
+2024-02-04T13:14:24+05:30 [info]: Service Title is visible
+2024-02-04T13:14:24+05:30 [info]: Test for login is completed
+2024-02-04T13:34:43+05:30 [info]: Navigated to login.salesforce.com
+2024-02-04T13:34:43+05:30 [info]: Filled username
+2024-02-04T13:34:43+05:30 [info]: Filled pasword
+2024-02-04T13:34:47+05:30 [info]: Clicked login button
+2024-02-04T13:34:56+05:30 [info]: Service Title is visible
+2024-02-04T13:34:56+05:30 [info]: Test for login is completed
