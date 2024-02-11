@@ -7,12 +7,15 @@ export default class ContactPage {
   private readonly firstNameTextFieldLocator = "First Name";
   private readonly lastNameTextFieldLocator = "Last Name";
   private readonly saveButtonLocator = "Save";
+  private readonly searchBoxLocator = "Search this list...";
   private readonly contactFullNameLabelLocator = "sfa-output-name-with-hierarchy-icon-wrapper";
+  private readonly contactDisplayNameLocator = "#brandBand_2";
  
 
   constructor(private page: Page) {}
 
   async createNewContact(fname: string, lname:string) {
+    await this.page.getByRole('link', { name: this.contactsLink }).click();
     await this.page.getByRole('button', { name: this.newButtonLocator }).click();
     logger.info("New button is clicked");
     await this.page.getByPlaceholder(this.firstNameTextFieldLocator).click();
@@ -34,5 +37,14 @@ async expectContactLabelContainsFirstNameAndLastName(fname: string, lname:string
     logger.info(`New contact created and ${fname} ${lname} is visible`)
     await this.page.getByRole('link', { name: this.contactsLink }).click();
 
+}
+
+async findExistingContactByLastName(lname:string) {
+
+  await this.page.getByRole("link", { name: this.contactsLink }).click();
+  await this.page.getByPlaceholder(this.searchBoxLocator).click();
+  await this.page.getByPlaceholder(this.searchBoxLocator).fill(lname);
+  await this.page.getByPlaceholder(this.searchBoxLocator).press("Enter");
+  await this.page.getByRole("link", { name: lname }).click(); 
 }
 }

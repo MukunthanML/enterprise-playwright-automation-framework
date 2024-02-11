@@ -27,4 +27,14 @@ export default class HomePage {
     return new ContactPage(this.page);
     
   }
+
+  async navigateToCaseTab(){
+
+    await expect(this.page.getByRole('link', { name: this.contactsLinkLocator })).toBeVisible();
+    logger.info("Contacts Tab is visible")
+    await this.page.getByRole('link', { name: this.contactsLinkLocator }).click();
+    logger.info("Contacts Tab is clicked")
+    return new ContactPage(this.page);
+    
+  }
 }
