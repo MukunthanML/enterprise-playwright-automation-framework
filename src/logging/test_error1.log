@@ -87,3 +87,12 @@ Call log:
   [2m- expect.toBeVisible with timeout 350000ms[22m
 [2m  - waiting for getByTitle('Service')[22m
 
+2024-02-17T00:44:10+05:30 [error]: Error clicking login button: Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m()[22m
+
+Locator: getByTitle('Service')
+Expected: visible
+Received: hidden
+Call log:
+  [2m- expect.toBeVisible with timeout 15000ms[22m
+[2m  - waiting for getByTitle('Service')[22m
+

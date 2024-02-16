@@ -1,11 +1,10 @@
-import { Page, test as base, expect as defaultExpect } from "@playwright/test";
+import { test as base, expect as defaultExpect } from "@playwright/test";
 import LoginPage from "../pages/LoginPage";
 import HomePage from "../pages/HomePage";
 import { decrypt } from "../utils/CryptojsUtil";
 
 type UIPages = {
   homePage: HomePage;
-  page: Page;
 };
 
 export const expect = defaultExpect;
