@@ -20,7 +20,7 @@ test("API Monitoring test", async ({ page }) => {
 test("API Intercepting test", async ({ page }) => {
     // Enable request interception
     await page.route("**/*", (route) => {
-
+     
     // Get the original headers
     const headers = route.request().headers();
 
@@ -29,6 +29,7 @@ test("API Intercepting test", async ({ page }) => {
     console.log(headers);
     
     route.continue({ headers });
+    
   });
 
   page.on('request', request=>{
