@@ -8,7 +8,7 @@ const authFile = "src/config/auth.json";
 test("simple login test", async ({ page }) => {
   const loginPage = new LoginPage(page);
   await loginPage.navigateToLoginPage();
-  await loginPage.fillUsername(decrypt(process.env.userid!));
+  await loginPage.fillUsername(decrypt(process.env.username!));
   await loginPage.fillPassword(decrypt(process.env.password!));
   const homePage = await loginPage.clickLoginButton();
   await homePage.expectServiceTitleToBeVisible();
