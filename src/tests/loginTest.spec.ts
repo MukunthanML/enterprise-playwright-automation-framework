@@ -25,3 +25,12 @@ test.skip("Login with auth file", async ({ browser }) => {
   );
   await expect(page.getByRole("link", { name: "Accounts" })).toBeVisible();
 });
+
+
+test("simple login test with self heal", async ({ page }) => {
+  const loginPage = new LoginPage(page);
+  await loginPage.navigateToLoginPage();
+  await loginPage.fillUsername_selfheal("demo_selfheal");
+  
+});
+

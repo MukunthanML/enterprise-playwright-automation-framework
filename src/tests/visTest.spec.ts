@@ -8,6 +8,7 @@ test("Verify Logo Placement and Size", async ({ page }) => {
   if (boundingBox) {
     expect(boundingBox.width).toBe(160.890625);
     expect(boundingBox.height).toBe(112.984375);
+    
   }
 });
 

@@ -1,9 +1,13 @@
 import { Page } from "@playwright/test";
 import HomePage from "./HomePage";
 import logger from "../utils/LoggerUtil";
+import findValidElement from "../utils/SelfHealingUtill";
 
 export default class LoginPage {
   private readonly usernameInputSelector = "#username";
+  // private readonly usernameInputSelectors = ["#username","input[name='username']",".username", "//*[@id='username']",
+  private readonly usernameInputSelectors = ["#username88",'input[name="username88"]',".username", "//*[@id='username']",
+  ];
   private readonly passwordInputSelector = "#password";
   private readonly loginButtonSelector = "#Login";
 
@@ -24,6 +28,11 @@ export default class LoginPage {
   async fillUsername(username: string) {
     await this.page.locator(this.usernameInputSelector).fill(username);
     logger.info("Filled username");
+  }
+
+  async fillUsername_selfheal(username: string) {
+    let usernameInputLocator = await findValidElement(this.page,this.usernameInputSelectors);
+    usernameInputLocator && await usernameInputLocator.fill(username);
   }
 
   async fillPassword(password: string) {
