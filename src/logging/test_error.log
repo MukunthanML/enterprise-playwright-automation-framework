@@ -24,3 +24,20 @@
 2024-03-09T02:56:47+05:30 [error]: Invalid locator: #username88
 2024-03-09T02:59:47+05:30 [error]: Invalid locator: #username88
 2024-03-09T02:59:52+05:30 [error]: Invalid locator: input[name="username88"]
+2024-03-11T12:47:55+05:30 [error]: Invalid locator: #username9
+2024-03-11T12:48:47+05:30 [error]:  Invalid locator: #username9
+2024-03-11T12:48:52+05:30 [error]:  Invalid locator: input[name="username9"]
+2024-03-11T12:48:57+05:30 [error]:  Invalid locator: .username9
+2024-03-11T12:49:02+05:30 [error]:  Invalid locator: //*[@id='username9']
+2024-03-11T12:49:02+05:30 [error]: All locators are invalid
+2024-03-11T13:00:49+05:30 [error]:  Invalid locator: #username9
+2024-03-11T13:00:55+05:30 [error]:  Invalid locator: input[name="username9"]
+2024-03-11T13:01:00+05:30 [error]:  Invalid locator: .username9
+2024-03-11T13:01:05+05:30 [error]:  Invalid locator: //*[@id='username9']
+2024-03-11T13:01:05+05:30 [error]: All locators are invalid
+2024-03-11T13:44:41+05:30 [error]:  Invalid locator: #username9
+2024-03-11T13:45:13+05:30 [error]:  Invalid locator: #username9
+2024-03-11T13:45:18+05:30 [error]:  Invalid locator: input[name="username8"]
+2024-03-11T13:45:23+05:30 [error]:  Invalid locator: .username8
+2024-03-11T13:45:23+05:30 [error]:  Invalid locator: //*[@id='username8]
+2024-03-11T13:45:23+05:30 [error]: All locators are invalid

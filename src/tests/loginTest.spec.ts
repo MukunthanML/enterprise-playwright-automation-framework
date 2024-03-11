@@ -5,6 +5,12 @@ import { decrypt } from "../utils/CryptojsUtil";
 
 const authFile = "src/config/auth.json";
 
+test("simple login test with self heal", async ({ page }) => {
+  const loginPage = new LoginPage(page);
+  await loginPage.navigateToLoginPage();
+  await loginPage.fillUsername_selfheal("demo_selfheal");
+});
+
 test("simple login test", async ({ page }) => {
   const loginPage = new LoginPage(page);
   await loginPage.navigateToLoginPage();
@@ -25,12 +31,3 @@ test.skip("Login with auth file", async ({ browser }) => {
   );
   await expect(page.getByRole("link", { name: "Accounts" })).toBeVisible();
 });
-
-
-test("simple login test with self heal", async ({ page }) => {
-  const loginPage = new LoginPage(page);
-  await loginPage.navigateToLoginPage();
-  await loginPage.fillUsername_selfheal("demo_selfheal");
-  
-});
-

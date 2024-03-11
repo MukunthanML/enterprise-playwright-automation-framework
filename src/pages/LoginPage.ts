@@ -1,13 +1,11 @@
-import { Page } from "@playwright/test";
+import { Page, expect } from "@playwright/test";
 import HomePage from "./HomePage";
 import logger from "../utils/LoggerUtil";
 import findValidElement from "../utils/SelfHealingUtill";
 
 export default class LoginPage {
   private readonly usernameInputSelector = "#username";
-  // private readonly usernameInputSelectors = ["#username","input[name='username']",".username", "//*[@id='username']",
-  private readonly usernameInputSelectors = ["#username88",'input[name="username88"]',".username", "//*[@id='username']",
-  ];
+  private readonly usernameInputSelectors = ["#username",'input[name="username"]', ".username", "//*[@id='username]"];
   private readonly passwordInputSelector = "#password";
   private readonly loginButtonSelector = "#Login";
 
@@ -31,8 +29,11 @@ export default class LoginPage {
   }
 
   async fillUsername_selfheal(username: string) {
-    let usernameInputLocator = await findValidElement(this.page,this.usernameInputSelectors);
-    usernameInputLocator && await usernameInputLocator.fill(username);
+    let usernameInputLocator = await findValidElement(this.page,this.usernameInputSelectors );
+    await usernameInputLocator?.fill(username);
+    const enteredValue = await usernameInputLocator?.inputValue();
+    expect(enteredValue).toBe(username);
+   
   }
 
   async fillPassword(password: string) {
