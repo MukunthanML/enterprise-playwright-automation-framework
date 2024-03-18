@@ -6,27 +6,26 @@ This repository contains a Playwright framework setup for automated testing. The
 
 Project Folder<br>
 ├── node_modules <br>
-├── playwright-report<br>
 └── src<br>
-    ├── api<br>
-    ├── config<br>
-    ├── fixtures<br>
-    ├── logging<br>
-    ├── pages<br>
-    ├── testdata<br>
-    └── tests<br>
-|  .eslintrc.json<br>
-│   .gitignore<br>
-│   package-lock.json<br>
-│   package.json<br>
-│   playwright.config.ts<br>
-│   requirements.md<br>
-│   tsconfig.json<br>
-├── .github<br>
-│   └── workflows<br>
-│       └── main.yml<br>
-
-
+&nbsp; &nbsp; &nbsp; &nbsp;├── api<br>
+&nbsp; &nbsp; &nbsp; &nbsp;├── config<br>
+&nbsp; &nbsp; &nbsp; &nbsp;├── fixtures<br>
+&nbsp; &nbsp; &nbsp; &nbsp;├── logging<br>
+&nbsp; &nbsp; &nbsp; &nbsp;├── pages<br>
+&nbsp; &nbsp; &nbsp; &nbsp;├── testdata<br>
+&nbsp; &nbsp; &nbsp; &nbsp;└── tests<br>
+├─ playwright-report<br>
+│ .eslintrc.json<br>
+│ readme.md<br>
+│ .gitignore<br>
+│ package-lock.json<br>
+│ package.json<br>
+│ playwright.config.ts<br>
+│ requirements.md<br>
+│ tsconfig.json<br>
+├─ .github<br>
+│ &nbsp; &nbsp; &nbsp; &nbsp;└── workflows<br>
+│ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; └── main.yml<br>
 
 ## Description
 
