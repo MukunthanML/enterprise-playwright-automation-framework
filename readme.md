@@ -10,38 +10,11 @@ Project Folder
 └── src<br>
     ├── api<br>
     ├── config<br>
-    │   ├── .env<br>
-    │   ├── .env.qa<br>
-    │   ├── .env.uat<br>
-    │   └── auth.json<br>
     ├── fixtures<br>
-    │   └── loginFixture.ts<br>
     ├── logging<br>
-    │   ├── test_error.log<br>
-    │   └── test_run.log<br>
     ├── pages<br>
-    │   ├── CasePage.ts<br>
-    │   ├── ContactPage.ts<br>
-    │   ├── HomePage.ts<br>
-    │   └── LoginPage.ts<br>
     ├── testdata<br>
-    │   ├── contactCaseFlow.json<br>
-    │   ├── contacts.json<br>
-    │   ├── data.csv<br>
-    │   ├── datademo.json<br>
-    │   ├── testData_en.csv<br>
-    │   └── testData_en.json<br>
     └── tests<br>
-        ├── apiMockTest.spec.ts<br>
-        ├── apiTest.spec.ts<br>
-        ├── contactTest.spec.ts<br>
-        ├── fixtureTest.spec.ts<br>
-        ├── loginTest.spec.ts<br>
-        ├── oldTest.spec.ts<br>
-        ├── SerialTest.spec.ts<br>
-        ├── visTest.spec.ts<br>
-        └── visTest.spec.ts-snapshots<br>
-            └──Screenshot-compare-test-1-Google-Chrme-win32.png<br>
 |  .eslintrc.json<br>
 │   .gitignore<br>
 │   package-lock.json<br>
