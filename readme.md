@@ -4,7 +4,7 @@ This repository contains a Playwright framework setup for automated testing. The
 
 ## Project Folder Structure
 
-Project Folder
+Project Folder<br>
 ├── node_modules <br>
 ├── playwright-report<br>
 └── src<br>
