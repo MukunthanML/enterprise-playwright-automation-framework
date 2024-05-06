@@ -8,9 +8,9 @@ const srcDir = path.resolve(currentDir, "..");
 
 // Change to 'config' folder
 const configDir = path.resolve(srcDir, "config");
-const envFilePath = `${configDir}\\.env`;
+let envFilePath = `${configDir}\\.env`;
 if (process.env.NODE_ENV) {
-  const envFilePath = `${configDir}\\.env.${process.env.NODE_ENV}`;
+  envFilePath = `${configDir}\\.env.${process.env.NODE_ENV}`;
 }
 
 //console.log(envFilePath);
@@ -28,7 +28,7 @@ export function encryptEnvFile() {
     if (value) {
       const encryptedValue = CryptoJSUtilFile.AES.encrypt(
         value,
-        SALT
+        SALT,
       ).toString();
       return `${key}=${encryptedValue}`;
     }
@@ -54,7 +54,7 @@ export function decryptEnvFile() {
 
     if (value) {
       const decryptedValue = CryptoJSUtilFile.AES.decrypt(value, SALT).toString(
-        CryptoJSUtilFile.enc.Utf8
+        CryptoJSUtilFile.enc.Utf8,
       );
 
       return `${key}=${decryptedValue}`;
